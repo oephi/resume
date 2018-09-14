@@ -1,5 +1,6 @@
 img.icon {
     height: 3em;
+    margin-bottom: 1em;
 }
 
 img.profile-pic {
@@ -7,7 +8,7 @@ img.profile-pic {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;  
+    width: 80%;  
 }
 
 .header {
@@ -20,6 +21,9 @@ img.profile-pic {
 
 .profile {
     grid-area: profile;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .skills {
@@ -38,7 +42,10 @@ body {
     grid-template-rows: auto;
     grid-template-areas: 
     "header header header "
-    "aboutme aboutme  profile"
+    "aboutme aboutme ."
+    "aboutme aboutme profile"
+    "aboutme aboutme profile"
+    "aboutme aboutme ."
     "skills education education";
 }
 
@@ -47,8 +54,8 @@ body header {
     position: relative;
     text-align: center;
     /* color: white; */
-
 }
+
 
 body header img.background {
     width: 100%;
@@ -99,4 +106,16 @@ body section .hobbies-list {
     list-style: none;
     display: flex;
     justify-content: space-around;
+}
+
+.profile-icons {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+section span {
+    font-family: 'PT Mono', monospace;
+    font-weight: bold;
 }
