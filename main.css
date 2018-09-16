@@ -8,7 +8,8 @@ img.profile-pic {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;  
+    height: auto;
+    width: 60%;  
 }
 
 .header {
@@ -40,6 +41,7 @@ body {
     grid-column-gap: 2em;
     grid-template-columns: 33% 33% auto;
     grid-template-rows: auto;
+    grid-auto-rows: minmax(100px, auto);
     grid-template-areas: 
     "header header header "
     "aboutme aboutme ."
@@ -47,6 +49,22 @@ body {
     "aboutme aboutme profile"
     "aboutme aboutme ."
     "skills education education";
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        display: grid;
+        grid-column-gap: 2em;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: 
+        "header"
+        "profile"
+        "aboutme"
+        "skills"
+        "education";
+    }        
 }
 
 
@@ -118,4 +136,5 @@ body section .hobbies-list {
 section span {
     font-family: 'PT Mono', monospace;
     font-weight: bold;
+    font-size: 1.2em;
 }
