@@ -16,7 +16,7 @@ img.profile-pic {
     grid-area: header;
 }
 
-.about-me {
+.aboutme {
     grid-area: aboutme; 
 }
 
@@ -55,9 +55,9 @@ body {
     body {
         display: grid;
         grid-column-gap: 2em;
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         grid-template-rows: auto;
-        grid-auto-rows: minmax(100px, auto);
+        /* grid-auto-rows: minmax(100px, auto); */
         grid-template-areas: 
         "header"
         "profile"
