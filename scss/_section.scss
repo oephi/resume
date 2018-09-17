@@ -1,20 +1,27 @@
 section {
     font-family: 'Share Tech Mono', monospace;
 
+
     .hobbies-list {
         list-style: none;
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
+        flex-wrap: wrap;
+
+        // @media only screen and (max-width: 600px){
+        //     list-style: none;
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: space-around;
+        //     // flex-wrap: wrap;
+        // }
     }
 
     span {
         font-family: 'PT Mono', monospace;
         font-weight: bold;
         font-size: 1.2em;
-
-        .icon {
-            // height: 3em;
-            // margin-bottom: 1em;
-        }
     }
-}
+
+}   
