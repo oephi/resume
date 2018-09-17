@@ -61,12 +61,22 @@ section .hobbies-list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
+}
+@media only screen and (max-width: 600px) {
+  section .hobbies-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 section span {
   font-family: "PT Mono", monospace;
   font-weight: bold;
   font-size: 1.2em;
+}
+section #factDisplay {
+  color: darkslategrey;
 }
 
 img.profile-pic {
