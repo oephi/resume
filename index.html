@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pofile</title>
+    <title>Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="http://cdn.materialdesignicons.com/2.7.94/css/materialdesignicons.min.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Mono|Share+Tech+Mono" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono|Share+Tech+Mono" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/hexagons.css" />
 </head>
 <body>
     <header class="header">
@@ -20,7 +20,7 @@
     </header>
     <div class="container main">
         <section class="about-me w3-panel w3-border section">
-            <span class="mdi mdi-square-edit-outline mdi-48px"></span>
+            <img src="./assets/square-edit-outline.png" alt="edit" srcset="">
             <div><span class="section-titles">About me</span>
                 <p> I am largely a self taught junior developer from Sydney, Australia, currently studying the Diploma of Information Technology with Coder Academy. My software environments are .Net and .NetCore but I know my way around Rails and Phoenix aswell. I am excellent within the Linux environment and command line and have been an Archlinux user for many years. I am competent in HTML, CSS, JavaScript, Python, C#, Ruby and Bash. I'm currently furthering my programming knowledge with the functional paradigm via Elixir and Phoenix and have dabbled with Dart and Flutter.</p>
 
@@ -28,7 +28,7 @@
                 
                 <p>My previous and current roles all require an ability to lead and work within a team. It is a joy for me to utilise group dynamics in order to achieve the highest desirable outcome for all involved. I am a fast and inquisitive learner with a penchant for finding simple, lateral solutions to seemingly complex problems.</p>
             </div>
-            <span class="mdi mdi-basketball mdi-48px"></span>
+            <img src="./assets/basketball.png" alt="basketball">
             <div><span>Hobbies</span>
                 <div>
                     <ul class="hobbies-list">
@@ -54,15 +54,15 @@
                 <li>Nationality: Australian</li>
             </ul>
             <div class="profile-icons">
-                <a href="https://www.facebook.com/sickle.brown"><span class="mdi mdi-facebook mdi-32px"></span></a>
-                <a href="https://github.com/oephi/"><span class="mdi mdi-github-circle mdi-32px"></span></a>
-                <a href="https://www.instagram.com/oephiwan/"><span class="mdi mdi-instagram mdi-32px"></span></a>
-                <a href="https://www.linkedin.com/in/ryan-sickle/"><span class="mdi mdi-linkedin-box mdi-32px"></span></a>
-                <a href="https://medium.com/food4fluctuations"><span class="mdi mdi-medium mdi-432px"></span></a>
+                <a href="https://www.facebook.com/sickle.brown"><img src="./assets/facebook.png" alt="" srcset="" class="icons"></a>
+                <a href="https://github.com/oephi/"><img src="./assets/github-circle (1).png" alt="" srcset="" class="icons"></a>
+                <a href="https://www.instagram.com/oephiwan/"><img src="./assets/instagram.png" alt="" srcset="" class="icons"></a>
+                <a href="https://www.linkedin.com/in/ryan-sickle/"><img src="./assets/linkedin.png" alt="" srcset="" class="icons"></a>
+                <a href="https://medium.com/food4fluctuations"><img src="./assets/medium.png" alt="" srcset="" class="icons"></a>
             </div>
         </section>
         <section class="skills w3-panel w3-border section">
-            <span class="mdi mdi-star-outline mdi-48px"></span>
+            <img src="./assets/star-outline.png" alt="star" srcset="">
             <div><span class="title">Skills</span></div>
             <div>
                 <ul class="skills-list">
@@ -79,7 +79,7 @@
             <p></p>
         </section>
         <section class="education w3-panel w3-border section">
-            <span class="mdi mdi-lightbulb-on-outline mdi-48px"></span>
+            <img src="./assets/lightbulb-on-outline.png" alt="" srcset="">
             <div><span class="title">Education</span></div>
             <ul>
                 <li>
@@ -93,7 +93,7 @@
             </ul>
         </section>
             <section class="work-experience w3-panel w3-border section">
-            <span class="mdi mdi-briefcase-outline mdi-48px"></span>            
+            <img src="./assets/briefcase-outline.png" alt="" srcset="">
             <div><span class="title">Work Experience</span></div>
             <ul>
                 <li>
@@ -115,23 +115,75 @@
             </ul>
         </section>
         <section class="random-facts w3-panel section">
-                <span class="mdi mdi-cogs mdi-48px"></span>          
+                <div>
+                <img src="./assets/cogs.png" alt="cogs" srcset=""></div>
                 <div><span class="title">Random Facts</span></div>
                 <div id="factDisplay"></div>
                 <button class="btn waves-effect waves-light blue-grey" type="submit" name="action" onclick= "newFact()">New Fact
-                    <!-- <i class="material-icons right">send</i> -->
                 </button>
         </section>
         <section class="projects w3-panel w3-border section">
-            <span class="mdi mdi-flask-outline mdi-48px"></span>          
-            <div><span class="title">Projects</span></div>
+          <img src="./assets/flask-outline.png" alt="flask" srcset="">      
+          <div><span class="title">Projects</span></div>
+          <ul id="hexGrid">
+            <li class="hex">
+              <div class="hexIn">
+                <a class="hexLink" style="background-color:palevioletred" href="#">
+                  <!-- <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt="" /> -->
+                  <h1>This is a title</h1>
+                  <!-- <p>Some sample text about the article this hexagon leads to</p>  -->
+                  <p><img src="./assets/R0010279.jpg" alt="" srcset=""></p>
+                </a>
+              </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" style="background-color:aquamarine" href="#">
+                    <!-- <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt="" /> -->
+                    <h1>This is a title</h1>
+                    <!-- <p>Some sample text about the article this hexagon leads to</p>  -->
+                    <p><img src="./assets/R0010279.jpg" alt="" srcset=""></p>
+                    </a>
+                </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" style="background-color:olivedrab"href="#">
+                        <!-- <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt="" /> -->
+                        <h1>This is a title</h1>
+                        <!-- <p>Some sample text about the article this hexagon leads to</p>  -->
+                        <p><img src="./assets/R0010279.jpg" alt="" srcset=""></p>
+                        </a>
+                    </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" style="background-color:mediumvioletred" href="#">
+                            <!-- <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt="" /> -->
+                            <h1>This is a title</h1>
+                            <!-- <p>Some sample text about the article this hexagon leads to</p>  -->
+                            <p><img src="./assets/R0010279.jpg" alt="" srcset=""></p>
+                            </a>
+                        </div>
+                        </li>
+                        <li class="hex">
+                            <div class="hexIn">
+                                <a class="hexLink" style="background-color:lightsalmon" href="#">
+                                <!-- <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt="" /> -->
+                                <h1>This is a title</h1>
+                                <!-- <p>Some sample text about the article this hexagon leads to</p>  -->
+                                <p><img src="./assets/R0010279.jpg" alt="" srcset=""></p>
+                                </a>
+                            </div>
+                            </li>
+            </ul>
         </section>
         <section class="contact-deets w3-panel w3-border section">
-                <span class="mdi mdi-incognito mdi-48px"></span>                      
+                <img src="./assets/incognito.png" alt="" srcset="">                      
             <div><span class="title">Contact Deets</span></div>
         </section>
         <section class="contact-me w3-panel w3-border section">
-                <span class="mdi mdi-at mdi-48px"></span>          
+                <img src="./assets/at.png" alt="" srcset="">        
             <div><span class="title">Contact Me</span></div>
         </section>
     </div>

@@ -11,7 +11,7 @@ header img.background {
 header h1, header h3 {
   font-family: "PT Mono", monospace;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   header h1 {
     position: absolute;
     top: 50%;
@@ -62,7 +62,7 @@ section .hobbies-list {
   flex-direction: row;
   justify-content: space-around;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   section .hobbies-list {
     list-style: none;
     display: flex;
@@ -77,6 +77,9 @@ section span {
 }
 section #factDisplay {
   color: darkslategrey;
+}
+section .icons {
+  color: darkblue;
 }
 
 img.profile-pic {
@@ -142,14 +145,14 @@ img.profile-pic {
   grid-auto-rows: minmax(100px, auto);
   grid-template-areas: "header header header " "about-me about-me ." "about-me about-me profile" "about-me about-me profile" "about-me about-me ." "skills education education" "random-facts work-experience work-experience" "projects projects projects" "contact-deets contact-me contact-me";
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .main {
     display: grid;
     grid-column-gap: 2em;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: "header" "profile" "about-me" "skills" "education" "work-experience" "random-facts" "contact-deets" "contact-me";
+    grid-template-areas: "header" "profile" "about-me" "skills" "education" "work-experience" "projects" "random-facts" "contact-deets" "contact-me";
   }
 }
 

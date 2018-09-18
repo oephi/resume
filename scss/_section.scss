@@ -9,7 +9,7 @@ section {
         justify-content: space-around;
         // flex-wrap: wrap;
 
-        @media only screen and (max-width: 600px){
+        @media only screen and (max-width: 800px){
             list-style: none;
             display: flex;
             flex-direction: column;

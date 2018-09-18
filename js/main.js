@@ -4,3 +4,5 @@ function newFact(){
 var randomNumber=Math.floor(Math.random()*(20));
     document.getElementById('factDisplay').innerHTML=fact[randomNumber];
 }
+
+var randomColor = Math.floor(Math.random()*16777215).toString(16);
