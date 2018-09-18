@@ -47,6 +47,8 @@ img.profile-pic {
 }
 
 .projects {
+    display: flex;
+    justify-self: center;
     grid-area: projects;
 }
 
