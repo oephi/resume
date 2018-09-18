@@ -47,8 +47,6 @@ img.profile-pic {
 }
 
 .projects {
-    display: flex;
-    justify-self: center;
     grid-area: projects;
 }
 
@@ -74,6 +72,7 @@ img.profile-pic {
     "about-me about-me profile"
     "about-me about-me ."
     "skills education education"
+    "skills work-experience work-experience"
     "random-facts work-experience work-experience"
     "projects projects projects"
     "contact-deets contact-me contact-me";
