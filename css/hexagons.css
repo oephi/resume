@@ -12,7 +12,7 @@
     width: 80%;
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     list-style-type: none;
     overflow:hidden;
   }
@@ -82,7 +82,7 @@
   .hex h1 {
     bottom: 50%;
     padding-top:50%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: black;
     z-index: 1;
     -webkit-transform:translate3d(0,-100%,0);
