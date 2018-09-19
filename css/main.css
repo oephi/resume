@@ -107,61 +107,51 @@ section #factDisplay {
   background-color: #533747;
 }
 
-/* Green */
 .html {
   width: 80%;
   background-color: #945d5e;
 }
 
-/* Green */
 .languages {
   width: 50%;
   background-color: #5F506B;
 }
 
-/* Blue */
 .linux {
   width: 90%;
   background-color: #6A6B83;
 }
 
-/* Red */
 .windows {
   width: 70%;
   background-color: #76949F;
 }
 
-/* Dark Grey */
 .material {
   width: 60%;
   background-color: #71677c;
 }
 
-/* Dark Grey */
 .learner {
   width: 85%;
   background-color: #86BBBD;
 }
 
-/* Dark Grey */
 .inquisitive {
   width: 80%;
   background-color: #BDB4BF;
 }
 
-/* Dark Grey */
 .people {
   width: 90%;
   background-color: #889696;
 }
 
-/* Dark Grey */
 .didgeridoo {
   width: 100%;
   background-color: #899D78;
 }
 
-/* Dark Grey */
 * {
   margin: 0;
   padding: 0;
@@ -178,7 +168,7 @@ body {
   width: 80%;
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
-  font-size: 9px;
+  font-size: 0.8em;
   list-style-type: none;
   overflow: hidden;
 }
