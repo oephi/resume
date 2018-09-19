@@ -1,7 +1,7 @@
 /* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
 
-/* Container for skill bars */
+/****************** Container for skill bars **************/
 .skills-bar-wrapper {
     width: 100%; /* Full width */
     background-color: #ddd; /* Grey background */
@@ -13,15 +13,17 @@
     color: white; /* White text color */
 }
 
-.frameworks {width: 60%; background-color:#533747;} /* Green */
-.html {width: 80%; background-color:#945d5e;} /* Green */
-.languages {width: 50%; background-color: #5F506B;} /* Blue */
-.linux {width: 90%; background-color: #6A6B83;} /* Red */
-.windows {width: 70%; background-color: #76949F;} /* Dark Grey */
-.material {width: 60%; background-color: #71677c;} /* Dark Grey */
-.learner {width: 85%; background-color: #86BBBD;} /* Dark Grey */
-.inquisitive {width: 80%; background-color: #BDB4BF;} /* Dark Grey */
-.people {width: 90%; background-color: #889696;} /* Dark Grey */
-// .hardware {width: 60%; background-color: #5F7470;} /* Dark Grey */
-.didgeridoo {width: 100%; background-color: #899D78;} /* Dark Grey */
+// ***************** skills bar colours ************************
+
+.frameworks {width: 60%; background-color:#533747;} 
+.html {width: 80%; background-color:#945d5e;} 
+.languages {width: 50%; background-color: #5F506B;} 
+.linux {width: 90%; background-color: #6A6B83;} 
+.windows {width: 70%; background-color: #76949F;} 
+.material {width: 60%; background-color: #71677c;} 
+.learner {width: 85%; background-color: #86BBBD;} 
+.inquisitive {width: 80%; background-color: #BDB4BF;} 
+.people {width: 90%; background-color: #889696;} 
+// .hardware {width: 60%; background-color: #5F7470;} 
+.didgeridoo {width: 100%; background-color: #899D78;} 
 
