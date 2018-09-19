@@ -32,5 +32,11 @@ section {
     h6.education-name {
         font-weight: bold;
     }
+    
+    ul.experience-list{
+        display: flex;
+        justify-content: row-reverse;
+
+    }
 
 }   

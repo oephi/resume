@@ -82,7 +82,6 @@ section #factDisplay {
 section h6.education-name {
   font-weight: bold;
 }
-
 /* Make sure that padding behaves as expected */
 * {
   box-sizing: border-box;
