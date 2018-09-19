@@ -1,0 +1,23 @@
+div.vl {
+    border-left: 2px solid grey;
+    height: 120%;
+    -webkit-transform:
+        translateY(-7em)
+        translateX(4em)
+        rotate(45deg); 
+    position: relative;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.line1 {
+    width: 112px;
+    height: 47px;
+    border-bottom: 1px solid green;
+    -webkit-transform:
+        translateY(-40px)
+        translateX(5px)
+        rotate(40deg); 
+    position: absolute;
+}
