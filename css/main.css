@@ -79,6 +79,9 @@ section div span.title {
 section #factDisplay {
   color: darkslategrey;
 }
+section h6.education-name {
+  font-weight: bold;
+}
 
 /* Make sure that padding behaves as expected */
 * {
@@ -393,7 +396,7 @@ img.profile-pic {
   grid-template-columns: 33% 33% auto;
   grid-template-rows: auto;
   grid-auto-rows: minmax(100px, auto);
-  grid-template-areas: "header header header " "about-me about-me ." "about-me about-me profile" "about-me about-me profile" "about-me about-me ." "skills education education" "skills work-experience work-experience" "random-facts work-experience work-experience" "projects projects projects" "contact-deets contact-me contact-me";
+  grid-template-areas: "header header header " "about-me about-me ." "about-me about-me profile" "about-me about-me profile" "about-me about-me ." "skills education education" "random-facts work-experience work-experience" "random-facts work-experience work-experience" "projects projects projects" "contact-deets contact-me contact-me";
 }
 @media only screen and (max-width: 800px) {
   .main {
