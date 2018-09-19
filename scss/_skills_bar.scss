@@ -9,11 +9,19 @@
 
 .skills {
     text-align: left; /* Right-align text */
-    // padding: 0; /* Add some padding */
+    margin: 0 0 10px 0; /* Add some padding */
     color: white; /* White text color */
 }
 
-.html {width: 80%; background-color: #4CAF50;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
-.php {width: 60%; background-color: #808080;} /* Dark Grey */
+.frameworks {width: 60%; background-color:#533747;} /* Green */
+.html {width: 80%; background-color:#945d5e;} /* Green */
+.languages {width: 50%; background-color: #5F506B;} /* Blue */
+.linux {width: 90%; background-color: #6A6B83;} /* Red */
+.windows {width: 70%; background-color: #76949F;} /* Dark Grey */
+.material {width: 60%; background-color: #71677c;} /* Dark Grey */
+.learner {width: 85%; background-color: #86BBBD;} /* Dark Grey */
+.inquisitive {width: 80%; background-color: #BDB4BF;} /* Dark Grey */
+.people {width: 90%; background-color: #889696;} /* Dark Grey */
+// .hardware {width: 60%; background-color: #5F7470;} /* Dark Grey */
+.didgeridoo {width: 100%; background-color: #899D78;} /* Dark Grey */
+

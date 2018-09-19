@@ -58,52 +58,58 @@
   }
   
   /*** HEX CONTENT **********************************************************************/
-  .hex img {
-    left: -100%;
-    right: -100%;
-    width: auto;
-    height: 100%;
-    margin: 0 auto;
-    -webkit-transform: rotate3d(0,0,0,0deg);
-        -ms-transform: rotate3d(0,0,0,0deg);
-            transform: rotate3d(0,0,0,0deg);
-  }
-  
-  .hex h1, .hex p {
-    width: 100%;
-    padding: 5%;
-    box-sizing:border-box;
-    /* background-color: rgba(0, 128, 128, 0.8); */
-    background-image: url("/assets/R0010171-3.jpg");
-    font-weight: 300;
-    -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
-            transition:          transform .2s ease-out, opacity .3s ease-out;
-  }
-  .hex h1 {
-    bottom: 50%;
-    padding-top:50%;
-    font-size: 1.2em;
-    color: black;
-    z-index: 1;
-    -webkit-transform:translate3d(0,-100%,0);
-        -ms-transform:translate3d(0,-100%,0);
-            transform:translate3d(0,-100%,0);
-  }
-  .hex h1::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 45%;
-    width: 10%;
-    text-align: center;
-    border-bottom: 1px solid black;
-  }
-  .hex p {
-    top: 50%;
-    padding-bottom:50%;
-    -webkit-transform:translate3d(0,100%,0);
-        -ms-transform:translate3d(0,100%,0);
-            transform:translate3d(0,100%,0);
+  .hex{
+      img {
+        left: -100%;
+        right: -100%;
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+        -webkit-transform: rotate3d(0,0,0,0deg);
+            -ms-transform: rotate3d(0,0,0,0deg);
+                transform: rotate3d(0,0,0,0deg);
+      }
+
+      h1, p {
+        width: 100%;
+        padding: 5%;
+        box-sizing:border-box;
+        /* background-color: rgba(0, 128, 128, 0.8); */
+        background-image: url("/assets/R0010171-3.jpg");
+        font-weight: 300;
+        -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
+                transition:          transform .2s ease-out, opacity .3s ease-out;
+      }
+
+      h1 {
+        bottom: 50%;
+        padding-top:50%;
+        font-size: 1.2em;
+        color: black;
+        z-index: 1;
+        -webkit-transform:translate3d(0,-100%,0);
+            -ms-transform:translate3d(0,-100%,0);
+                transform:translate3d(0,-100%,0);
+      }
+
+      h1::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        width: 10%;
+        text-align: center;
+        border-bottom: 1px solid black;
+      }
+
+      p {
+        top: 50%;
+        padding-bottom:50%;
+        -webkit-transform:translate3d(0,100%,0);
+            -ms-transform:translate3d(0,100%,0);
+                transform:translate3d(0,100%,0);
+      }
+
   }
   
   
