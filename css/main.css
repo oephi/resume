@@ -54,7 +54,7 @@ header img.logo {
 
 section {
   font-family: "Share Tech Mono", monospace;
-  font-size: 1.4em;
+  font-size: 1.8em;
 }
 section .hobbies-list {
   list-style: none;
@@ -187,7 +187,7 @@ body {
   width: 80%;
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
   list-style-type: none;
   overflow: hidden;
 }
@@ -353,6 +353,11 @@ body {
 }
 body {
   background-color: palegoldenrod;
+}
+
+.container2 {
+  padding-left: 16em;
+  padding-right: 16em;
 }
 
 img.profile-pic {
