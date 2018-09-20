@@ -16,7 +16,7 @@ header {
     @media only screen and (max-width: 800px){
         h1 {
             position: absolute;
-            top: 50%;
+            top: 500%;
             left: 50%;
             margin: 0 0 1vw 0;
             font-size: 0vw;
@@ -36,7 +36,7 @@ header {
     
     h1 {
         position: absolute;
-        top: 50%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 4vw;
@@ -44,7 +44,7 @@ header {
 
     h3 {
         position: absolute;
-        top: 65%;
+        top: 45%;
         left: 50%;
         margin: 3em 0 0 0;
         font-size: 1.3vw;
@@ -54,7 +54,7 @@ header {
     img.logo {
         position: absolute;
         height: 8vw;
-        top: 40%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
     }

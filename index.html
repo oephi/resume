@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Mono|Share+Tech+Mono" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono|Share+Tech+Mono" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/hexagons.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            var options = {
+                animateThreshold: 50,
+                scrollPollInterval: 20
+            }
+            $('.aniview').AniView(options);
+        });
+    </script>
 </head>
+
 <body>
-    <header class="header">
-        <img src="./assets/R0010106.jpg" alt="" srcset="" class="background w3-hover-opacity">
-        <img src="./assets/logo2.png" alt="" srcset="" class="logo">
+    <header class="header container">
+        <img src="./assets/cookiecolour.jpg" alt="" srcset="" class="background w3-hover-opacity">
+        <!-- <img src="./assets/logo2.png" alt="" srcset="" class="logo"> -->
         <h1>Ryan Sickle</h1>
-        <h3>Software/Web Developer</h3>
+        <h3>Web/Software Developer</h3>
     </header>
-    <div class="container main">
+    <div class="container main aniview slow" data-av-animation="fadeInDown">
         <section class="about-me w3-panel w3-border-left section">
             <img src="./assets/square-edit-outline.png" alt="edit" srcset="">
             <p style="color:black">&oline;</p>
             <div><span class="title">About me</span>
-                <p> I am largely a self taught junior developer from Sydney, Australia, currently studying the Diploma of Information Technology with Coder Academy. My software environments are .Net and .NetCore but I know my way around Rails and Phoenix aswell. I am excellent within the Linux environment and command line and have been an Archlinux user for many years. I am competent in HTML, CSS, JavaScript, Python, C#, Ruby and Bash. I'm currently furthering my programming knowledge with the functional paradigm via Elixir and Phoenix and have dabbled with Dart and Flutter.</p>
+                <p> I am largely a self taught junior developer from Sydney, Australia, currently studying the Diploma
+                    of Information Technology with Coder Academy. My software environments are .Net and .NetCore but I
+                    know my way around Rails and Phoenix aswell. I am excellent within the Linux environment and
+                    command line and have been an Archlinux user for many years. I am competent in HTML, CSS,
+                    JavaScript, Python, C#, Ruby and Bash. I'm currently furthering my programming knowledge with the
+                    functional paradigm via Elixir and Phoenix and have dabbled with Dart and Flutter.</p>
                 <br />
-                <p>Currently I am Web Master for the Clairvision School of Meditation with whom I am also a Meditation Facilitator.</p>
+                <p>Currently I am Web Master for the Clairvision School of Meditation with whom I am also a Meditation
+                    Facilitator.</p>
                 <br />
-                <p>My previous and current roles all require an ability to lead and work within a team. It is a joy for me to utilise group dynamics in order to achieve the highest desirable outcome for all involved. I am a fast and inquisitive learner with a penchant for finding simple, lateral solutions to seemingly complex problems.</p>
+                <p>My previous and current roles all require an ability to lead and work within a team. It is a joy for
+                    me to utilise group dynamics in order to achieve the highest desirable outcome for all involved. I
+                    am a fast and inquisitive learner with a penchant for finding simple, lateral solutions to
+                    seemingly complex problems.</p>
             </div>
             <br />
             <img src="./assets/basketball.png" alt="basketball">
             <p style="color:black">&oline;</p>
             <div><span class="title">Hobbies</span></div>
-                <br />
-                <div>
-                    <ul class="hobbies-list">
-                        <li>Weight Lifting</li>
-                        <!-- <li>|</li> -->
-                        <li>Meditation</li>
-                        <!-- <li>|</li> -->
-                        <li>Travel</li>
-                        <!-- <li>|</li> -->
-                        <li>Photography</li>
-                        <!-- <li>|</li> -->
-                        <li>Didgeridoo</li>
-                    </ul>
-                </div>  
+            <br />
+            <div>
+                <ul class="hobbies-list">
+                    <li>Weight Lifting</li>
+                    <li>Meditation</li>
+                    <li>Travel</li>
+                    <li>Photography</li>
+                    <li>Didgeridoo</li>
+                </ul>
+            </div>
         </section>
         <section class="profile w3-panel w3-border-left section">
             <img src="./assets/me2.jpg" alt="" srcset="" class="w3-greyscale profile-pic">
@@ -60,7 +79,8 @@
                 <a href="https://www.facebook.com/sickle.brown"><img src="./assets/facebook.png" alt="" srcset="" class="icons"></a>
                 <a href="https://github.com/oephi/"><img src="./assets/github-circle (1).png" alt="" srcset="" class="icons"></a>
                 <a href="https://www.instagram.com/oephiwan/"><img src="./assets/instagram.png" alt="" srcset="" class="icons"></a>
-                <a href="https://www.linkedin.com/in/ryan-sickle/"><img src="./assets/linkedin.png" alt="" srcset="" class="icons"></a>
+                <a href="https://www.linkedin.com/in/ryan-sickle/"><img src="./assets/linkedin.png" alt="" srcset=""
+                        class="icons"></a>
                 <a href="https://medium.com/food4fluctuations"><img src="./assets/medium.png" alt="" srcset="" class="icons"></a>
             </div>
         </section>
@@ -110,7 +130,7 @@
             <img src="./assets/lightbulb-on-outline.png" alt="" srcset="">
             <p style="color:black">&oline;</p>
             <div><span class="title">Education</span></div>
-            <ul>
+            <ul class="education-align">
                 <li>
                     <h6>Current</h6>
                     <h6 class="education-name">Diploma in Information Technology (Software Development)</h6>
@@ -124,7 +144,7 @@
                         <li>Paired Programming</li>
                     </ul>
                 </li>
-            <br />
+                <br />
                 <li>
                     <h6>2017</h6>
                     <h6 class="education-name">Web App Development</h6>
@@ -134,7 +154,7 @@
                         <li>HTML/CSS/Bootstrap</li>
                     </ul>
                 </li>
-            <br />
+                <br />
                 <li>
                     <h6>2013</h6>
                     <h6 class="education-name">Certificate III in Conservation and Land Management</h6>
@@ -151,7 +171,8 @@
                 </li>
                 <li>
                     <h6 class="education-name">Level 2 Chainsaw Operator</h6>
-                </li><li>
+                </li>
+                <li>
                     <h6 class="education-name">Advanced First Aid</h6>
                 </li>
             </ul>
@@ -160,6 +181,7 @@
             <img src="./assets/briefcase-outline.png" alt="" srcset="">
             <p style="color:black">&oline;</p>
             <div><span class="title">Work Experience</span></div>
+            <br />
             <ul class="experience-list">
                 <li>
                     <h6>Feb 2018 - May 2018</h6>
@@ -175,7 +197,7 @@
                         <li>Remote position</li>
                     </ul>
                 </li>
-            <br />
+                <br />
                 <li>
                     <h6>2015 - Current</h6>
                     <h6 class="education-name">Web-Master</h6>
@@ -199,90 +221,95 @@
             </ul>
         </section>
         <section class="random-facts w3-panel section">
-                <div>
+            <div>
                 <img src="./assets/cogs.png" alt="cogs" srcset=""></div>
-                <p style="color:black">&oline;</p>
-                <div><span class="title">Random Facts</span></div>
-                <div id="factDisplay"></div>
-                <button class="btn waves-effect waves-light blue-grey" type="submit" name="action" onclick= "newFact()">New Fact
-                </button>
+            <p style="color:black">&oline;</p>
+            <div><span class="title">Random Facts</span></div>
+            <div id="factDisplay"></div>
+            <button class="btn waves-effect waves-light blue-grey" type="submit" name="action" onclick="newFact()">New
+                Fact
+            </button>
         </section>
         <section class="projects w3-panel-left w3-border-right section">
-            <img src="./assets/flask-outline.png" alt="flask" srcset="">      
+            <img src="./assets/flask-outline.png" alt="flask" srcset="">
             <p style="color:black">&oline;</p>
             <div><span class="title">Projects</span></div>
             <ul id="hexGrid">
                 <li class="hex">
-                <div class="hexIn">
-                    <a class="hexLink" style="background-color:palevioletred" href="#">
-                    <h1>Email design</h1>
-
-                    <p><img src="./assets/mailout2screen.png" alt="" srcset=""></p>
-                    </a>
-                </div>
-                </li>
-                <li class="hex">
                     <div class="hexIn">
-                        <a class="hexLink" style="background-color:aquamarine" href="#">
-                        <h1>Phoenix</h1>
-                        <p><img src="./assets/discuss1.png" alt="" srcset=""></p>
+                        <a class="hexLink" style="background-color:palevioletred" href="#">
+                            <h1>Email design</h1>
+
+                            <p><img src="./assets/mailout2screen.png" alt="" srcset=""></p>
                         </a>
                     </div>
                 </li>
                 <li class="hex">
                     <div class="hexIn">
-                        <a class="hexLink" style="background-color:olivedrab"href="#">
-                        <h1>DotNetCore</h1>
-                        <p><img src="./assets/dotnetscreenshot2.png" alt="" srcset=""></p>
+                        <a class="hexLink" style="background-color:aquamarine" href="#">
+                            <h1>Phoenix</h1>
+                            <p><img src="./assets/discuss1.png" alt="" srcset=""></p>
+                        </a>
+                    </div>
+                </li>
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink" style="background-color:olivedrab" href="#">
+                            <h1>DotNetCore</h1>
+                            <p><img src="./assets/dotnetscreenshot2.png" alt="" srcset=""></p>
                         </a>
                     </div>
                 </li>
                 <li class="hex">
                     <div class="hexIn">
                         <a class="hexLink" style="background-color:mediumvioletred" href="#">
-                        <h1>Identicon Generator</h1>
-                        <p><img src="./assets/identiconshot.png" alt="" srcset=""></p>
+                            <h1>Identicon Generator</h1>
+                            <p><img src="./assets/identiconshot.png" alt="" srcset=""></p>
                         </a>
                     </div>
                 </li>
                 <li class="hex">
                     <div class="hexIn">
                         <a class="hexLink" style="background-color:lightsalmon" href="#">
-                        <h1>This is a title</h1>
-                        <p><img src="./assets" alt="" srcset=""></p>
+                            <h1>This is a title</h1>
+                            <p><img src="./assets" alt="" srcset=""></p>
                         </a>
                     </div>
                 </li>
             </ul>
         </section>
         <section class="contact-deets w3-panel w3-border-left section">
-                <img src="./assets/incognito.png" alt="" srcset=""> 
-                <p style="color:black">&oline;</p>
-                <div><span class="title">Contact Deets</span></div>
-                <ul>
-                    <li class="contact-align" style="text-indent: 1%">
-                        <img src="./assets/phone.png" alt="" srcset="">
-                        <p><a href="tel:+61404010110">+61404010110</a></p>
-                    </li>
-                    <li class="contact-align" style="text-indent: 1%">
-                        <img src="./assets/email-variant.png" alt="" srcset="">
-                        <p><a href="mailto:r.sickle@protonmail.com">r.sickle@protonmail.com</a></p>
-                    </li>
-                    <li class="contact-align" style="text-indent: 1%">
-                        <img src="./assets/linkedin-box.png" alt="" srcset="">
-                        <p><a href="https://www.linkedin.com/in/ryan-sickle/">linkedin</a></p>
-                    </li>
-                </ul>
+            <img src="./assets/incognito.png" alt="" srcset="">
+            <p style="color:black">&oline;</p>
+            <div><span class="title">Contact Deets</span></div>
+            <ul>
+                <li class="contact-align" style="text-indent: 1%">
+                    <img src="./assets/phone.png" alt="" srcset="">
+                    <p><a href="tel:+61404010110">+61404010110</a></p>
+                </li>
+                <li class="contact-align" style="text-indent: 1%">
+                    <img src="./assets/email-variant.png" alt="" srcset="">
+                    <p><a href="mailto:r.sickle@protonmail.com">r.sickle@protonmail.com</a></p>
+                </li>
+                <li class="contact-align" style="text-indent: 1%">
+                    <img src="./assets/linkedin-box.png" alt="" srcset="">
+                    <p><a href="https://www.linkedin.com/in/ryan-sickle/">linkedin</a></p>
+                </li>
+            </ul>
         </section>
         <section class="contact-me w3-panel w3-border-left section">
-                <img src="./assets/at.png" alt="" srcset="">  
-                <p style="color:black">&oline;</p>
-                <div><span class="title">Contact Me</span></div>
-                
+            <img src="./assets/at.png" alt="" srcset="">
+            <p style="color:black">&oline;</p>
+            <div><span class="title">Contact Me</span></div>
+
         </section>
+
     </div>
 
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+
 </body>
+
 </html>

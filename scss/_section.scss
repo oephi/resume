@@ -1,6 +1,6 @@
 section {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 1.2em;
+    font-size: 1.4em;
 
     .hobbies-list {
         list-style: none;
@@ -35,14 +35,14 @@ section {
     
     ul.experience-list{
         display: flex;
-        justify-content: row-reverse;
+        justify-content: space-between;
 
     }
     
     .contact-align {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
 }   
