@@ -1,6 +1,6 @@
 section {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 1.8em;
+    font-size: 1.5em;
 
     .hobbies-list {
         list-style: none;
@@ -30,6 +30,7 @@ section {
     }
 
     h6.education-name {
+        font-size: 1em;
         font-weight: bold;
     }
     
@@ -51,4 +52,5 @@ section {
         justify-content: space-between;
     }
 
+    
 }   

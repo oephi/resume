@@ -1,3 +1,4 @@
+// @import "navbar";
 header {
     position: relative;
     text-align: center;
@@ -58,4 +59,9 @@ header {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    .navbar-fixed {
+        position: absolute;z-index:999999999;
+    }
+
 }

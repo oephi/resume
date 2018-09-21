@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono|Share+Tech+Mono" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/hexagons.css" />
@@ -21,286 +22,336 @@
                 scrollPollInterval: 20
             }
             $('.aniview').AniView(options);
+            $('.sidenav').sidenav();
+
         });
     </script>
 </head>
 
-<body>
-    <header class="header container2 aniview slow" data-av-animation="bounceInLeft">
-        <img src="./assets/cookiecolour.jpg" alt="" srcset="" class="background w3-hover-opacity">
+
+<body class="container">
+        <ul id="slide-out" class="sidenav">
+                <li><div class="user-view">
+                    <div class="background">
+                    <img src="assets/cookiecolour.jpg">
+                    </div>
+                    <a href="#user"><img class="circle" src="assets/logo2.png"></a>
+                    <a href="#name"><span class="white-text name">John Doe</span></a>
+                    <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div></li>
+                <li><a href="#about-me"><i class="material-icons">cloud</i>About Me</a></li>
+                <li><a href="#profile">Profile & Contact Details</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#skills">Skills & Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#random-facts">Random Facts</a></li>
+
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">Contact Me</a></li>
+                <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" style="font-size:50px; color: whitesmoke;">menu</i></a>             
+    <header class="header aniview slow" data-av-animation="bounceInLeft">    
+            
+        <img src="./assets/cookiecolour.jpg" alt="" srcset="" class="background">
         <!-- <img src="./assets/logo2.png" alt="" srcset="" class="logo"> -->
         <h1>Ryan Sickle</h1>
         <h3>Web/Software Developer</h3>
     </header>
-    <div class="container2 main aniview slow" data-av-animation="fadeInDown">
-        <section class="about-me w3-panel w3-border-left section">
-            <img src="./assets/square-edit-outline.png" alt="edit" srcset="">
-            <p style="color:black">&#8254;</p>
-            <div><span class="title">About me</span>
-                <p> I am largely a self taught junior developer from Sydney, Australia, currently studying the Diploma
-                    of Information Technology with Coder Academy. My software environments are .Net and .NetCore but I
-                    know my way around Rails and Phoenix aswell. I am excellent within the Linux environment and
-                    command line and have been an Archlinux user for many years. I am competent in HTML, CSS,
-                    JavaScript, Python, C#, Ruby and Bash. I'm currently furthering my programming knowledge with the
-                    functional paradigm via Elixir and Phoenix and have dabbled with Dart and Flutter.</p>
+    <main>
+        <div class="main aniview slow" data-av-animation="fadeInDown">
+            <section class="about-me w3-panel w3-border-left section" id="about-me">
+                <img src="./assets/square-edit-outline.png" alt="edit" srcset="">
+                <p style="color:black">&#8254;</p>
+                <div><span class="title">About me</span>
+                    <p> I am largely a self taught junior developer from Sydney, Australia, currently studying the Diploma
+                        of Information Technology with Coder Academy. My software environments are .Net and .NetCore but I
+                        know my way around Rails and Phoenix aswell. I am excellent within the Linux environment and
+                        command line and have been an Archlinux user for many years. I am competent in HTML, CSS,
+                        JavaScript, Python, C#, Ruby and Bash. I'm currently furthering my programming knowledge with the
+                        functional paradigm via Elixir and Phoenix and have dabbled with Dart and Flutter.</p>
+                    <br />
+                    <p>Currently I am Web Master for the Clairvision School of Meditation with whom I am also a Meditation
+                        Facilitator.</p>
+                    <br />
+                    <p>My previous and current roles all require an ability to lead and work within a team. It is a joy for
+                        me to utilise group dynamics in order to achieve the highest desirable outcome for all involved. I
+                        am a fast and inquisitive learner with a penchant for finding simple, lateral solutions to
+                        seemingly complex problems.</p>
+                </div>
                 <br />
-                <p>Currently I am Web Master for the Clairvision School of Meditation with whom I am also a Meditation
-                    Facilitator.</p>
-                <br />
-                <p>My previous and current roles all require an ability to lead and work within a team. It is a joy for
-                    me to utilise group dynamics in order to achieve the highest desirable outcome for all involved. I
-                    am a fast and inquisitive learner with a penchant for finding simple, lateral solutions to
-                    seemingly complex problems.</p>
-            </div>
-            <br />
-            <img src="./assets/basketball.png" alt="basketball">
-            <p style="color:black">&#8254;</p>            
-            <div><span class="title">Hobbies</span></div>
-            <br />
-            <div>
-                <ul class="hobbies-list">
-                    <li>Weight Lifting</li>
-                    <li>Meditation</li>
-                    <li>Travel</li>
-                    <li>Photography</li>
-                    <li>Didgeridoo</li>
-                </ul>
-            </div>
-        </section>
-        <section class="profile w3-panel w3-border-left section">
-            <img src="./assets/me2.jpg" alt="" srcset="" class="w3-greyscale profile-pic">
-            <div><span class="title">Profile</span></div>
-            <ul>
-                <li>Name: Ryan Sickle</li>
-                <li>Date of Birth: 22-June-1982</li>
-                <li>Nationality: Australian</li>
-            </ul>
-            <div class="profile-icons">
-                <a href="https://www.facebook.com/sickle.brown"><img src="./assets/facebook.png" alt="" srcset="" class="icons"></a>
-                <a href="https://github.com/oephi/"><img src="./assets/github-circle (1).png" alt="" srcset="" class="icons"></a>
-                <a href="https://www.instagram.com/oephiwan/"><img src="./assets/instagram.png" alt="" srcset="" class="icons"></a>
-                <a href="https://www.linkedin.com/in/ryan-sickle/"><img src="./assets/linkedin.png" alt="" srcset=""
-                        class="icons"></a>
-                <a href="https://medium.com/food4fluctuations"><img src="./assets/medium.png" alt="" srcset="" class="icons"></a>
-            </div>
-        </section>
-        <section class="skills w3-panel w3-border-left section">
-            <img src="./assets/star-outline.png" alt="star" srcset="">
-            <p style="color:black">&#8254;</p>            
-            <div><span class="title">Skills</span></div>
-            <div>
-                <ul class="skills-list">
-                    <li class="skills-bar-wrapper">
-                        <div class="skills frameworks">Rails/Phoenix/ASP.NET Core</div>
-                    </li>
-                    <li class="skills-bar-wrapper">
-                        <div class="skills html">Html/CSS/Materialize<div>
-                    </li>
-                    <li class="skills-bar-wrapper">
-                        <div class="skills languages">Python/Bash/JS/Dart/Flutter</div>
-                    </li>
-                    <li class="skills-bar-wrapper">
-                        <div class="skills linux">Linux</div>
-                    </li>
-                    <li class="skills-bar-wrapper">
-                        <div class="skills windows">Windows</div>
-                    </li>
-                    <li class="skills-bar-wrapper">
-                        <div class="skills material">Material Design</div>
-                    </li>
-                    <li class="skills-bar-wrapper">
-                        <div class="skills learner">Fast learner</div>
-                    </li>
-                    <li class="skills-bar-wrapper">
-                        <div class="skills inquisitive">Inquisitive</div>
-                    </li>
-                    <li class="skills-bar-wrapper">
-                        <div class="skills people">People Skills</div>
-                    </li>
-                    <!-- <li class="skills-bar-wrapper">
-                        <div class="skills hardware">Computer Hardware</div>
-                    </li> -->
-                    <li class="skills-bar-wrapper">
-                        <div class="skills didgeridoo">Didgeridoo</div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="education w3-panel w3-border-left section">
-            <img src="./assets/lightbulb-on-outline.png" alt="" srcset="">
-            <p style="color:black">&#8254;</p>            
-            <div><span class="title">Education</span></div>
-            <ul class="education-align">
-                <li style="margin: 1em">
-                    <h6>Current</h6>
-                    <h6 class="education-name">Diploma in Information Technology (Software Development)</h6>
-                    <h6>Coder Academy</h6>
-                    <ul style="text-indent: 2%;">
-                        <li>Ruby/Rails/JS/MEAN/MERN</li>
-                        <li>HTML/CSS/Bootstrap</li>
-                        <li>Web and Application Design</li>
-                        <li>Testing</li>
-                        <li>Discrete Mathematics</li>
-                        <li>Paired Programming</li>
-                    </ul>
-                </li>
-                <li style="margin: 1em">
-                    <h6>2017</h6>
-                    <h6 class="education-name">Web App Development</h6>
-                    <h6>Coder Academy</h6>
-                    <ul style="text-indent: 2%;">
-                        <li>Ruby/Rails</li>
-                        <li>HTML/CSS/Bootstrap</li>
-                    </ul>
-                </li>
-                <li style="margin: 1em">
-                    <h6>2013</h6>
-                    <h6 class="education-name">Certificate III in Conservation and Land Management</h6>
-                    <h6>TAFE</h6>
-                    <ul style="text-indent: 2%;">
-                        <li>Environmental Management</li>
-                        <li>Ecology</li>
-                        <li>Plant Identification</li>
-                    </ul>
-                </li>
-                <li>
-                    <h6 class="education-name">Chemsafe Certifcation</h6>
-                </li>
-                <li>
-                    <h6 class="education-name">Level 2 Chainsaw Operator</h6>
-                </li>
-                <li>
-                    <h6 class="education-name">Advanced First Aid</h6>
-                </li>
-            </ul>
-        </section>
-        <section class="work-experience w3-panel w3-border-left section">
-            <img src="./assets/briefcase-outline.png" alt="" srcset="">
-            <p style="color:black">&#8254;</p>            
-            <div><span class="title">Work Experience</span></div>
-            <br />
-            <ul class="experience-list">
-                <li style="margin: 1em">
-                    <h6>Feb 2018 - May 2018</h6>
-                    <h6 class="education-name">Junior Developer</h6>
-                    <h6>Sealadder (sealadder.com)</h6>
-                    <ul style="text-indent: 2%;">
-                        <li>ASP.NET Core</li>
-                        <li>Angular 4</li>
-                        <li>Jamine/Karma/git/pgadmin</li>
-                        <li>MySql</li>
-                        <li>Utilisation of APIs</li>
-                        <li>Debuggin/Testing</li>
-                        <li>Remote position</li>
-                    </ul>
-                </li>
-                <li style="margin: 1em">
-                    <h6>2015 - Current</h6>
-                    <h6 class="education-name">Web-Master</h6>
-                    <h6>Clairvision School of Meditation (clairvision.org.au)</h6>
-                    <ul style="text-indent: 2%;">
-                        <li>Web page maintenance</li>
-                        <li>Updating data using HTML and CSS</li>
-                        <li>Improving layout using HTML and CSS</li>
-                        <li>Remote file management using Filezilla</li>
-                        <li>Current migration to a responsive framework</li>
-                    </ul>
-                </li>
-                <!-- <li>
-                    <h6>Job title</h6>
-                    <p class="job-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eveniet eaque eum labore. Molestiae modi reiciendis ipsum nostrum error, minima tempora recusandae officia perspiciatis vero, necessitatibus odio! Provident, fuga voluptatem.</p>
-                </li> -->
-                <li></li>
-                <li></li>
-                <li></li>
-
-            </ul>
-        </section>
-        <section class="random-facts w3-panel section">
-            <div>
-                <img src="./assets/cogs.png" alt="cogs" srcset=""></div>
+                <img src="./assets/basketball.png" alt="basketball">
                 <p style="color:black">&#8254;</p>            
-            <div><span class="title">Random Facts</span></div>
-            <div id="factDisplay"></div>
-            <button class="btn waves-effect waves-light blue-grey" type="submit" name="action" onclick="newFact()">New
-                Fact
-            </button>
-        </section>
-        <section class="projects w3-panel-left w3-border-right section">
-            <img src="./assets/flask-outline.png" alt="flask" srcset="">
-            <p style="color:black">&#8254;</p>            
-            <div><span class="title">Projects</span></div>
-            <ul id="hexGrid">
-                <li class="hex">
-                    <div class="hexIn">
-                        <a class="hexLink" style="background-color:palevioletred" href="#">
-                            <h1>Email design</h1>
+                <div><span class="title" id="hobbies">Hobbies</span></div>
+                <br />
+                <div>
+                    <ul class="hobbies-list">
+                        <li>Weight Lifting</li>
+                        <li>Meditation</li>
+                        <li>Travel</li>
+                        <li>Photography</li>
+                        <li>Didgeridoo</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="profile w3-panel w3-border-left section"  id="profile">
+                <img src="./assets/me2.jpg" alt="" srcset="" class="w3-greyscale profile-pic z-depth-3">
+                <div><span class="title">Profile</span></div>
+                <ul>
+                    <li>Name: Ryan Sickle</li>
+                    <li>Date of Birth: 22-June-1982</li>
+                    <li>Nationality: Australian</li>
+                </ul>
+                <div class="profile-icons">
+                    <a href="https://www.facebook.com/sickle.brown"><img src="./assets/facebook.png" alt="" srcset="" class="icons hoverable"></a>
+                    <a href="https://github.com/oephi/"><img src="./assets/github-circle.png" alt="" srcset="" class="icons hoverable"></a>
+                    <a href="https://www.instagram.com/oephiwan/"><img src="./assets/instagram.png" alt="" srcset="" class="icons hoverable"></a>
+                    <a href="https://www.linkedin.com/in/ryan-sickle/"><img src="./assets/linkedin.png" alt="" srcset=""
+                            class="icons hoverable"></a>
+                    <a href="https://medium.com/food4fluctuations"><img src="./assets/medium.png" alt="" srcset="" class="icons hoverable"></a>
+                </div>
+            </section>
+            <section class="skills w3-panel w3-border-left section" id="skills">
+                <img src="./assets/star-outline.png" alt="star" srcset="">
+                <p style="color:black">&#8254;</p>            
+                <div><span class="title">Skills</span></div>
+                <div>
+                    <ul class="skills-list">
+                        <li class="skills-bar-wrapper">
+                            <div class="skills frameworks">Rails/Phoenix/ASP.NET Core</div>
+                        </li>
+                        <li class="skills-bar-wrapper">
+                            <div class="skills html">Html/CSS/Materialize<div>
+                        </li>
+                        <li class="skills-bar-wrapper">
+                            <div class="skills languages">Python/Bash/JS/Dart/Flutter</div>
+                        </li>
+                        <li class="skills-bar-wrapper">
+                            <div class="skills linux">Linux</div>
+                        </li>
+                        <li class="skills-bar-wrapper">
+                            <div class="skills windows">Windows</div>
+                        </li>
+                        <li class="skills-bar-wrapper">
+                            <div class="skills material">Material Design</div>
+                        </li>
+                        <li class="skills-bar-wrapper">
+                            <div class="skills learner">Fast learner</div>
+                        </li>
+                        <li class="skills-bar-wrapper">
+                            <div class="skills inquisitive">Inquisitive</div>
+                        </li>
+                        <li class="skills-bar-wrapper">
+                            <div class="skills people">People Skills</div>
+                        </li>
+                        <!-- <li class="skills-bar-wrapper">
+                            <div class="skills hardware">Computer Hardware</div>
+                        </li> -->
+                        <li class="skills-bar-wrapper">
+                            <div class="skills didgeridoo">Didgeridoo</div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="education w3-panel w3-border-left section" id="education">
+                <img src="./assets/lightbulb-on-outline.png" alt="" srcset="">
+                <p style="color:black">&#8254;</p>            
+                <div><span class="title">Education</span></div>
+                <ul class="education-align">
+                    <li style="margin: 1em">
+                        <h6>Current</h6>
+                        <h6 class="education-name">Diploma in Information Technology (Software Development)</h6>
+                        <h6>Coder Academy</h6>
+                        <ul style="text-indent: 2%;">
+                            <li>Ruby/Rails/JS/MEAN/MERN</li>
+                            <li>HTML/CSS/Bootstrap</li>
+                            <li>Web and Application Design</li>
+                            <li>Testing</li>
+                            <li>Discrete Mathematics</li>
+                            <li>Paired Programming</li>
+                        </ul>
+                    </li>
+                    <li style="margin: 1em">
+                        <h6>2017</h6>
+                        <h6 class="education-name">Web App Development</h6>
+                        <h6>Coder Academy</h6>
+                        <ul style="text-indent: 2%;">
+                            <li>Ruby/Rails</li>
+                            <li>HTML/CSS/Bootstrap</li>
+                        </ul>
+                    </li>
+                    <li style="margin: 1em">
+                        <h6>2013</h6>
+                        <h6 class="education-name">Certificate III in Conservation and Land Management</h6>
+                        <h6>TAFE</h6>
+                        <ul style="text-indent: 2%;">
+                            <li>Environmental Management</li>
+                            <li>Ecology</li>
+                            <li>Plant Identification</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h6 class="education-name">Chemsafe Certifcation</h6>
+                    </li>
+                    <li>
+                        <h6 class="education-name">Level 2 Chainsaw Operator</h6>
+                    </li>
+                    <li>
+                        <h6 class="education-name">Advanced First Aid</h6>
+                    </li>
+                </ul>
+            </section>
+            <section class="work-experience w3-panel w3-border-left section"  id="experience">
+                <img src="./assets/briefcase-outline.png" alt="" srcset="">
+                <p style="color:black">&#8254;</p>            
+                <div><span class="title">Work Experience</span></div>
+                <br />
+                <ul class="experience-list">
+                    <li style="margin: 1em">
+                        <h6>Feb 2018 - May 2018</h6>
+                        <h6 class="education-name">Junior Developer</h6>
+                        <h6>Sealadder (sealadder.com)</h6>
+                        <ul style="text-indent: 2%;">
+                            <li>ASP.NET Core</li>
+                            <li>Angular 4</li>
+                            <li>Jamine/Karma/git/pgadmin</li>
+                            <li>MySql</li>
+                            <li>Utilisation of APIs</li>
+                            <li>Debuggin/Testing</li>
+                            <li>Remote position</li>
+                        </ul>
+                    </li>
+                    <li style="margin: 1em">
+                        <h6>2015 - Current</h6>
+                        <h6 class="education-name">Web-Master</h6>
+                        <h6>Clairvision School of Meditation (clairvision.org.au)</h6>
+                        <ul style="text-indent: 2%;">
+                            <li>Web page maintenance</li>
+                            <li>Updating data using HTML and CSS</li>
+                            <li>Improving layout using HTML and CSS</li>
+                            <li>Remote file management using Filezilla</li>
+                            <li>Current migration to a responsive framework</li>
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <h6>Job title</h6>
+                        <p class="job-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eveniet eaque eum labore. Molestiae modi reiciendis ipsum nostrum error, minima tempora recusandae officia perspiciatis vero, necessitatibus odio! Provident, fuga voluptatem.</p>
+                    </li> -->
+                    <li></li>
+                    <li></li>
+                    <li></li>
 
-                            <p><img src="./assets/mailout2screen.png" alt="" srcset=""></p>
-                        </a>
-                    </div>
-                </li>
-                <li class="hex">
-                    <div class="hexIn">
-                        <a class="hexLink" style="background-color:aquamarine" href="#">
-                            <h1>Phoenix</h1>
-                            <p><img src="./assets/discuss1.png" alt="" srcset=""></p>
-                        </a>
-                    </div>
-                </li>
-                <li class="hex">
-                    <div class="hexIn">
-                        <a class="hexLink" style="background-color:olivedrab" href="#">
-                            <h1>DotNetCore</h1>
-                            <p><img src="./assets/dotnetscreenshot2.png" alt="" srcset=""></p>
-                        </a>
-                    </div>
-                </li>
-                <li class="hex">
-                    <div class="hexIn">
-                        <a class="hexLink" style="background-color:mediumvioletred" href="#">
-                            <h1>Identicon Generator</h1>
-                            <p><img src="./assets/identiconshot.png" alt="" srcset=""></p>
-                        </a>
-                    </div>
-                </li>
-                <li class="hex">
-                    <div class="hexIn">
-                        <a class="hexLink" style="background-color:lightsalmon" href="#">
-                            <h1>This is a title</h1>
-                            <p><img src="./assets" alt="" srcset=""></p>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="contact-deets w3-panel w3-border-left section">
-            <img src="./assets/incognito.png" alt="" srcset="">
-            <p style="color:black">&#8254;</p>            
-            <div><span class="title">Contact Deets</span></div>
+                </ul>
+            </section>
+            <section class="random-facts w3-panel section"  id="random-facts">
+                <div>
+                    <img src="./assets/cogs.png" alt="cogs" srcset=""></div>
+                    <p style="color:black">&#8254;</p>            
+                <div><span class="title">Random Facts</span></div>
+                <div id="factDisplay"></div>
+                <button class="btn waves-effect waves-light blue-grey hoverable" style="font-size:1.2em" type="submit" name="action" onclick="newFact()">New
+                    Fact
+                </button>
+            </section>
+            <section class="projects w3-panel-left w3-border-right section" id="projects">
+                <img src="./assets/flask-outline.png" alt="flask" srcset="">
+                <p style="color:black">&#8254;</p>            
+                <div><span class="title">Projects</span></div>
+                <ul id="hexGrid">
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" style="background-color:palevioletred" href="http://clairvision.org.au/mailouts/2018_Melbourne_Mailout.html" target="_blank">
+                                <h1>Email design</h1>
+                                <p><img src="./assets/mailout2screen.png" alt="" srcset=""></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" style="background-color:aquamarine" href="https://github.com/oephi/discuss" target="_blank">
+                                <h1>Phoenix</h1>
+                                <p><img src="./assets/discuss1.png" alt="" srcset=""></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" style="background-color:olivedrab" href="https://github.com/oephi/BookingSystemNetCore" target="_blank">
+                                <h1>DotNetCore</h1>
+                                <p><img src="./assets/dotnetscreenshot2.png" alt="" srcset=""></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" style="background-color:mediumvioletred" href="https://github.com/oephi/identicon" target="_blank">
+                                <h1>Identicon Generator</h1>
+                                <p><img src="./assets/identiconshot.png" alt="" srcset=""></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" style="background-color:lightsalmon" href="https://github.com/oephi/plots2">
+                                <h1>Open Source</h1>
+                                <p><img src="./assets/publiclab.png" alt="" srcset=""></p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="contact-deets w3-panel w3-border-left section">
+                <img src="./assets/incognito.png" alt="" srcset="">
+                <p style="color:black">&#8254;</p>            
+                <div><span class="title">Contact Deets</span></div>
+                <ul>
+                    <li class="contact-align" style="text-indent: 1%">
+                        <img src="./assets/phone.png" alt="" srcset="">
+                        <p><a href="tel:+61404010110" target="_blank" class="hoverable">+61404010110</a></p>
+                    </li>
+                    <li class="contact-align" style="text-indent: 1%">
+                        <img src="./assets/email-variant.png" alt="" srcset="">
+                        <p><a href="mailto:r.sickle@protonmail.com" target="_blank" class="hoverable">r.sickle@protonmail.com</a></p>
+                    </li>
+                    <li class="contact-align" style="text-indent: 1%">
+                        <img src="./assets/linkedin-box.png" alt="" srcset="">
+                        <p><a href="https://www.linkedin.com/in/ryan-sickle/" target="_blank" class="hoverable">linkedin</a></p>
+                    </li>
+                </ul>
+            </section>
+            <!-- <section class="contact-me w3-panel w3-border-left section">
+                <img src="./assets/at.png" alt="" srcset="">
+                <p style="color:black">&#8254;</p>            
+                <div><span class="title">Contact Me</span></div>
+
+            </section> -->
+        </div>
+    </main>
+    <footer class="page-footer footer">
+        <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
             <ul>
-                <li class="contact-align" style="text-indent: 1%">
-                    <img src="./assets/phone.png" alt="" srcset="">
-                    <p><a href="tel:+61404010110" target="_blank">+61404010110</a></p>
-                </li>
-                <li class="contact-align" style="text-indent: 1%">
-                    <img src="./assets/email-variant.png" alt="" srcset="">
-                    <p><a href="mailto:r.sickle@protonmail.com" target="_blank">r.sickle@protonmail.com</a></p>
-                </li>
-                <li class="contact-align" style="text-indent: 1%">
-                    <img src="./assets/linkedin-box.png" alt="" srcset="">
-                    <p><a href="https://www.linkedin.com/in/ryan-sickle/" target="_blank">linkedin</a></p>
-                </li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
             </ul>
-        </section>
-        <section class="contact-me w3-panel w3-border-left section">
-            <img src="./assets/at.png" alt="" srcset="">
-            <p style="color:black">&#8254;</p>            
-            <div><span class="title">Contact Me</span></div>
-
-        </section>
-
-    </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer-copyright">
+        <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
