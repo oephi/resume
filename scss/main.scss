@@ -2,10 +2,15 @@
 @import'section';
 @import 'skills_bar';
 @import 'hexagons';
-
+@import 'navbar';
 
 body {
-    background-color: palegoldenrod;
+    background-color: bisque;
+}
+
+.container2 {
+    padding-left: 16em;
+    padding-right: 16em;
 }
 img.profile-pic {
     border-radius: 50%;
@@ -63,6 +68,10 @@ img.profile-pic {
     grid-area: contact-me;
 }
 
+.footer {
+    grid-area: footer;
+}
+
 
 .main {
     display: grid;
@@ -76,12 +85,13 @@ img.profile-pic {
     "about-me about-me ."
     "about-me about-me profile"
     "about-me about-me profile"
-    "about-me about-me ."
+    "about-me about-me contact-deets"
     "skills education education"
     "random-facts education education"
-    "work-experience work-experience ."
+    "work-experience work-experience work-experience"
     "projects projects projects"
-    "contact-deets contact-me contact-me";
+    "footer footer footer";
+    // "contact-me contact-me contact-me";
 
     @media only screen and (max-width: 800px){
             display: grid;
@@ -99,7 +109,7 @@ img.profile-pic {
             "projects"
             "random-facts"
             "contact-deets"
-            "contact-me";
+            // "contact-me";
     }       
 }
 
@@ -116,3 +126,7 @@ img.profile-pic {
     flex-direction: column;   
 }
 
+.sidenav-trigger {
+    position: absolute;
+    z-index: 9;
+}
