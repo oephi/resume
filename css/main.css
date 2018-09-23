@@ -8,13 +8,17 @@ header img.background {
   max-width: auto;
   overflow: hidden;
 }
+header h1 {
+  font-weight: bold;
+}
 header h1, header h3 {
-  font-family: "PT Mono", monospace;
+  font-family: "Palanquin", monospace;
+  color: #b4ada3;
 }
 @media only screen and (max-width: 800px) {
   header h1 {
     position: absolute;
-    top: 500%;
+    top: 50%;
     left: 50%;
     margin: 0 0 1vw 0;
     font-size: 0vw;
@@ -31,10 +35,10 @@ header h1, header h3 {
 }
 header h1 {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 header h3 {
   position: absolute;
@@ -57,8 +61,9 @@ header .navbar-fixed {
 }
 
 section {
-  font-family: "Share Tech Mono", monospace;
-  font-size: 1.5em;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 1.3em;
+  padding: 1em;
 }
 section .hobbies-list {
   list-style: none;
@@ -75,13 +80,13 @@ section .hobbies-list {
   }
 }
 section div span.title {
-  font-family: "PT Mono", monospace;
+  font-family: "Palanquin", monospace;
   font-weight: bold;
   font-size: 1.4em;
   color: black;
 }
 section #factDisplay {
-  color: darkslategrey;
+  color: purple;
 }
 section h6.education-name {
   font-size: 1em;
@@ -120,60 +125,61 @@ section .contact-align {
 .skills {
   text-align: left;
   /* Right-align text */
+  padding-left: 10px;
   margin: 0 0 10px 0;
   /* Add some padding */
-  color: white;
+  color: black;
   /* White text color */
 }
 
 .frameworks {
   width: 60%;
-  background-color: #533747;
+  background-color: #603140;
 }
 
 .html {
   width: 80%;
-  background-color: #945d5e;
+  background-color: #d3d57c;
 }
 
 .languages {
   width: 50%;
-  background-color: #5F506B;
+  background-color: #c7aa74;
 }
 
 .linux {
   width: 90%;
-  background-color: #6A6B83;
+  background-color: #957964;
 }
 
 .windows {
   width: 70%;
-  background-color: #76949F;
+  background-color: #cad178;
 }
 
 .material {
   width: 60%;
-  background-color: #71677c;
+  background-color: #a6ac63;
 }
 
 .learner {
   width: 85%;
-  background-color: #86BBBD;
+  background-color: #dbdc93;
 }
 
 .inquisitive {
   width: 80%;
-  background-color: #BDB4BF;
+  background-color: #c7aa74;
 }
 
 .people {
   width: 90%;
-  background-color: #889696;
+  background-color: #a89180;
 }
 
 .didgeridoo {
   width: 100%;
-  background-color: #899D78;
+  background-color: #8b6974;
 }
 
 * {
@@ -192,7 +198,7 @@ body {
   width: 80%;
   margin: 0 auto;
   font-family: "Raleway", sans-serif;
-  font-size: 1em;
+  font-size: 1vw;
   list-style-type: none;
   overflow: hidden;
 }
@@ -273,9 +279,6 @@ body {
   font-size: 1.2em;
   color: black;
   z-index: 1;
-  -webkit-transform: translate3d(0, -100%, 0);
-  -ms-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
 }
 .hex h1::after {
   content: "";
@@ -357,13 +360,96 @@ body {
   }
 }
 /* Position the navbar container inside the image */
-body {
-  background-color: bisque;
+textarea {
+  resize: none;
 }
 
-.container2 {
-  padding-left: 16em;
-  padding-right: 16em;
+.form-label {
+  font-size: 12px;
+  color: black;
+  margin: 0;
+  display: block;
+  opacity: 1;
+  -webkit-transition: 0.333s ease top, 0.333s ease opacity;
+  transition: 0.333s ease top, 0.333s ease opacity;
+}
+
+.form-control {
+  border-radius: 0;
+  border-color: #ccc;
+  border-width: 0 0 2px 0;
+  border-style: none none solid none;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #5e9bfc;
+}
+
+.js-hide-label {
+  opacity: 0;
+}
+
+.js-unhighlight-label {
+  color: #999;
+}
+
+.btn-start-order {
+  background: 0 0 #ffffff;
+  border: 1px solid #2f323a;
+  border-radius: 3px;
+  color: #2f323a;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: inherit;
+  margin: 30px 0;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  transition: all 0.25s ease 0s;
+}
+
+.btn-start-order:hover, .btn-start-order:active, .btn-start-order:focus {
+  border-color: #5e9bfc;
+  color: #5e9bfc;
+}
+
+.bar-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar-sidebar {
+  border: 3px solid black;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.bar-main {
+  width: 60%;
+  height: 150vh;
+}
+
+.bar-sidebar {
+  position: relative;
+  width: 25%;
+  height: 25vh;
+}
+
+.bar-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body {
+  background-color: #ddd8c4;
 }
 
 img.profile-pic {
@@ -428,7 +514,7 @@ img.profile-pic {
 .main {
   display: grid;
   grid-column-gap: 2em;
-  grid-row-gap: 6em;
+  grid-row-gap: 5em;
   grid-template-columns: 33% 33% auto;
   grid-template-rows: auto;
   grid-auto-rows: minmax(100px, auto);

@@ -1,14 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono|Share+Tech+Mono|Palanquin|Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/hexagons.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            var options = {
+                animateThreshold: 50,
+                scrollPollInterval: 20
+            }
+            $('.aniview').AniView(options);
+            $('.sidenav').sidenav();
+
+        });
+    </script>
 </head>
-<body>
+
+
+<body class="container">
+        <ul id="slide-out" class="sidenav">
+                <li><div class="user-view">
+                    <div class="background">
+                    <img src="assets/cookiecolour.jpg">
+                    </div>
+                    <a href="#user"><img class="circle" src="assets/logo2.png"></a>
+                    <a href="#name"><span class="white-text name">John Doe</span></a>
+                    <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div></li>
+                <li><a href="#about-me"><i class="material-icons">cloud</i>About Me</a></li>
+                <li><a href="#profile">Profile & Contact Details</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#skills">Skills & Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#random-facts">Random Facts</a></li>
+
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">Contact Me</a></li>
+                <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" style="font-size:50px; color: whitesmoke;">menu</i></a>             
+    <header class="header aniview slow" data-av-animation="bounceInLeft">    
+            
+        <img src="./assets/cookiecolour.jpg" alt="" srcset="" class="background">
+        <!-- <img src="./assets/logo2.png" alt="" srcset="" class="logo"> -->
+        <h1>Ryan Sickle</h1>
+        <h3>Web/Software Developer</h3>
+    </header>
     
+    <section>
+        
+            <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">                        
+                          <h2>Contact</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
+                            <form id="contact-form" class="form" action="#" method="POST" role="form">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
+                                </div>                            
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Your Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
+                                </div>                            
+                                <div class="form-group">
+                                    <label class="form-label" for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+                                </div>                            
+                                <div class="form-group">
+                                    <label class="form-label" for="message">Message</label>
+                                    <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>                                 
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-start-order">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                  </div>
+            </section>
+
+            <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+
 </body>
 </html>
