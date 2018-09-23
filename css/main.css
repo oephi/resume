@@ -48,9 +48,10 @@ header h3 {
   font-size: 1.3vw;
   transform: translate(-50%, -50%);
 }
-header img.logo {
+header img.icon {
   position: absolute;
-  height: 8vw;
+  color: #b4ada3;
+  height: 1vw;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
