@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Mono|Share+Tech+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono|Share+Tech+Mono|Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/hexagons.css" />
+    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script>
@@ -25,42 +26,55 @@
             $('.sidenav').sidenav();
 
         });
-    </script>
+    </script>   
 </head>
 
 
 <body class="container">
-        <ul id="slide-out" class="sidenav">
-                <li><div class="user-view">
-                    <div class="background">
-                    <img src="assets/cookiecolour.jpg">
-                    </div>
-                    <a href="#user"><img class="circle" src="assets/logo2.png"></a>
-                    <a href="#name"><span class="white-text name">John Doe</span></a>
-                    <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-                </div></li>
-                <li><a href="#about-me"><i class="material-icons">cloud</i>About Me</a></li>
-                <li><a href="#profile">Profile & Contact Details</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#skills">Skills & Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#random-facts">Random Facts</a></li>
+    <!-- START  :  HTML for the sidebar navigation menu -->
+    <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+            <div class="background">
+            <img src="assets/cookiecolour.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="assets/logo2.png"></a>
+            <a href="#name"><span class="white-text name">Ryan Sickle</span></a>
+            <a href="#email"><span class="white-text email">r.sickle@protonmail.com</span></a>
+        </div></li>
+        <li><a href="#about-me"><i class="material-icons">cloud</i>About Me</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#skills">Skills & Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#random-facts">Random Facts</a></li>
 
-                <li><div class="divider"></div></li>
-                <li><a class="subheader">Contact Me</a></li>
-                <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-            </ul>
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" style="font-size:50px; color: whitesmoke;">menu</i></a>             
-    <header class="header aniview slow" data-av-animation="bounceInLeft">    
-            
-        <img src="./assets/cookiecolour.jpg" alt="" srcset="" class="background">
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Contact Me</a></li>
+        
+        <li><a href="tel:+61404010110" target="_blank" class="hoverable"><img src="./assets/phone.png" alt="" srcset="">+61404010110</a></li>
+        <li class="contact-align"><a href="mailto:r.sickle@protonmail.com" target="_blank" class="hoverable"><img src="./assets/email-variant.png" alt="" srcset="">r.sickle@protonmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/ryan-sickle/" target="_blank" class="hoverable"><img src="./assets/linkedin-box.png" alt="" srcset="">LinkedIn</a></li>
+    </ul>
+    <!-- END   :    HTML for the sidebar navigation menu -->
+    <!-- START  :  Sidebar Initialisation -->
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" style="font-size:50px; color: whitesmoke;">menu</i></a>   
+    <!-- END  :  Sidebar Initialisation -->
+    <!-- START    :    Header Image and Title       -->
+    <!-- START   :    Animation container div -->
+    <header class="header aniview slow" data-av-animation="fadeIn" id="top">                
+        <img src="./assets/Ompha_heading2.png" alt="" srcset="" class="background">
         <!-- <img src="./assets/logo2.png" alt="" srcset="" class="logo"> -->
-        <h1>Ryan Sickle</h1>
+        <div class="aniview animated.delay-5s" data-av-animation="fadeIn">
+        <h1>RYAN SICKLE</h1>
         <h3>Web/Software Developer</h3>
+        </div>
     </header>
+    <!-- END    :    Header Image and Title       -->
+    <!-- START   :  Beginning of the main section -->
     <main>
-        <div class="main aniview slow" data-av-animation="fadeInDown">
-            <section class="about-me w3-panel w3-border-left section" id="about-me">
+        <div class="main aniview slow" data-av-animation="fadeIn">
+            <!-- START    :    About me and hobbies section -->
+            <section class="about-me w3-panel w3-border-left w3-border-dark-grey section" id="about-me">
                 <img src="./assets/square-edit-outline.png" alt="edit" srcset="">
                 <p style="color:black">&#8254;</p>
                 <div><span class="title">About me</span>
@@ -94,8 +108,10 @@
                     </ul>
                 </div>
             </section>
-            <section class="profile w3-panel w3-border-left section"  id="profile">
-                <img src="./assets/me2.jpg" alt="" srcset="" class="w3-greyscale profile-pic z-depth-3">
+            <!-- END    :    About me and hobbies section -->
+            <!-- START    :    Profile section -->
+            <section class="profile w3-panel w3-border-left w3-border-dark-grey section "  id="profile">
+                <img src="./assets/ryan.jpg" alt="" srcset="" class=" profile-pic z-depth-3">
                 <div><span class="title">Profile</span></div>
                 <ul>
                     <li>Name: Ryan Sickle</li>
@@ -111,7 +127,9 @@
                     <a href="https://medium.com/food4fluctuations"><img src="./assets/medium.png" alt="" srcset="" class="icons hoverable"></a>
                 </div>
             </section>
-            <section class="skills w3-panel w3-border-left section" id="skills">
+            <!-- END    :    Profile section -->
+            <!-- START    :    Skills section -->
+            <section class="skills w3-panel w3-border-left" id="skills">
                 <img src="./assets/star-outline.png" alt="star" srcset="">
                 <p style="color:black">&#8254;</p>            
                 <div><span class="title">Skills</span></div>
@@ -153,7 +171,9 @@
                     </ul>
                 </div>
             </section>
-            <section class="education w3-panel w3-border-left section" id="education">
+            <!-- END    :    Skills section -->
+            <!-- START    :    Education section -->
+            <section class="education w3-panel w3-border-left w3-border-dark-grey section" id="education">
                 <img src="./assets/lightbulb-on-outline.png" alt="" srcset="">
                 <p style="color:black">&#8254;</p>            
                 <div><span class="title">Education</span></div>
@@ -201,7 +221,9 @@
                     </li>
                 </ul>
             </section>
-            <section class="work-experience w3-panel w3-border-left section"  id="experience">
+            <!-- END    :    Education section -->
+            <!-- START    :    Work experience section -->
+            <section class="work-experience w3-panel w3-border-left w3-border-dark-grey section"  id="experience">
                 <img src="./assets/briefcase-outline.png" alt="" srcset="">
                 <p style="color:black">&#8254;</p>            
                 <div><span class="title">Work Experience</span></div>
@@ -243,17 +265,21 @@
 
                 </ul>
             </section>
-            <section class="random-facts w3-panel section"  id="random-facts">
+            <!-- END    :    Work experience section -->
+            <!-- START    :    Random Facts section -->
+            <section class="random-facts w3-panel section z-depth-5"  id="random-facts">
                 <div>
                     <img src="./assets/cogs.png" alt="cogs" srcset=""></div>
                     <p style="color:black">&#8254;</p>            
                 <div><span class="title">Random Facts</span></div>
                 <div id="factDisplay"></div>
-                <button class="btn waves-effect waves-light blue-grey hoverable" style="font-size:1.2em" type="submit" name="action" onclick="newFact()">New
+                <button class="btn waves-effect waves-light blue-grey hoverable" style="font-size:1.2em; margin:.5em" type="submit" name="action" onclick="newFact()">New
                     Fact
                 </button>
             </section>
-            <section class="projects w3-panel-left w3-border-right section" id="projects">
+            <!-- END    :    Random Facts section -->
+            <!-- START   :   Projects and Hexaon section -->
+            <section class="projects w3-panel-left w3-border-right w3-border-dark-grey section" id="projects">
                 <img src="./assets/flask-outline.png" alt="flask" srcset="">
                 <p style="color:black">&#8254;</p>            
                 <div><span class="title">Projects</span></div>
@@ -298,57 +324,65 @@
                             </a>
                         </div>
                     </li>
+                    <!-- <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" style="background-color:lightsalmon" href="https://github.com/oephi/plots2">
+                                <h1>Terminal App</h1>
+                                <p><img src="./assets/terminal_app.png" alt="" srcset=""></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" style="background-color:lightsalmon" href="https://github.com/oephi/plots2">
+                                <h1>Open Source</h1>
+                                <p><img src="./assets/publiclab.png" alt="" srcset=""></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" style="background-color:lightsalmon" href="https://github.com/oephi/plots2">
+                                <h1>Open Source</h1>
+                                <p><img src="./assets/publiclab.png" alt="" srcset=""></p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink" style="background-color:lightsalmon" href="https://github.com/oephi/plots2">
+                                <h1>Open Source</h1>
+                                <p><img src="./assets/publiclab.png" alt="" srcset=""></p>
+                            </a>
+                        </div>
+                    </li> -->
                 </ul>
             </section>
-            <section class="contact-deets w3-panel w3-border-left section">
-                <img src="./assets/incognito.png" alt="" srcset="">
-                <p style="color:black">&#8254;</p>            
-                <div><span class="title">Contact Deets</span></div>
-                <ul>
-                    <li class="contact-align" style="text-indent: 1%">
-                        <img src="./assets/phone.png" alt="" srcset="">
-                        <p><a href="tel:+61404010110" target="_blank" class="hoverable">+61404010110</a></p>
-                    </li>
-                    <li class="contact-align" style="text-indent: 1%">
-                        <img src="./assets/email-variant.png" alt="" srcset="">
-                        <p><a href="mailto:r.sickle@protonmail.com" target="_blank" class="hoverable">r.sickle@protonmail.com</a></p>
-                    </li>
-                    <li class="contact-align" style="text-indent: 1%">
-                        <img src="./assets/linkedin-box.png" alt="" srcset="">
-                        <p><a href="https://www.linkedin.com/in/ryan-sickle/" target="_blank" class="hoverable">linkedin</a></p>
-                    </li>
-                </ul>
-            </section>
-            <!-- <section class="contact-me w3-panel w3-border-left section">
-                <img src="./assets/at.png" alt="" srcset="">
-                <p style="color:black">&#8254;</p>            
-                <div><span class="title">Contact Me</span></div>
-
-            </section> -->
+            <!-- START   :   Projects and Hexaon section -->
         </div>
+        <!-- END    :    Animation container div -->
     </main>
-    <footer class="page-footer footer">
+    <!-- END    :   Main container -->
+
+    <!-- Sidebar navigation on the footer -->
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" style="font-size:50px; color: whitesmoke;">menu</i></a>
+
+    <footer class="page-footer footer brown darken-4">
         <div class="container">
         <div class="row">
-            <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
+            <!-- <ul>
                 <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
                 <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
                 <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
                 <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-            </ul>
+            </ul> -->
             </div>
         </div>
         </div>
         <div class="footer-copyright">
         <div class="container">
-        © 2014 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        © 2018 Copyright Ryan Sickle
+        <a class="grey-text text-lighten-4 right" href="#top">Back to the Top</a>
         </div>
         </div>
     </footer>

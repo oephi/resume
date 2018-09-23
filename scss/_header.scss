@@ -1,23 +1,32 @@
-// @import "navbar";
+// header scss
+
 header {
     position: relative;
     text-align: center;
     
+    // header background image
     img.background {
         width: 100%;
         max-height:25vw;
         max-width: auto;
         overflow: hidden;
     }
-
-    h1, h3 {
-        font-family: 'PT Mono', monospace;
+    // main title
+    h1 {
+        font-weight: bold;
     }
-
+    // secondary title
+    h1, h3 {    
+        // font-family: 'Montserrat', sans-serif;    
+        // font-family: 'Do Hyeon', sans-serif;
+        font-family: 'Palanquin', monospace;
+        color: #b4ada3;
+    }
+    // media queries for mobile phone
     @media only screen and (max-width: 800px){
         h1 {
             position: absolute;
-            top: 500%;
+            top: 50%;
             left: 50%;
             margin: 0 0 1vw 0;
             font-size: 0vw;
@@ -37,10 +46,10 @@ header {
     
     h1 {
         position: absolute;
-        top: 30%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 
     h3 {
@@ -51,7 +60,7 @@ header {
         font-size: 1.3vw;
         transform: translate(-50%, -50%);
     }
-
+    // logo class for when I have a logo
     img.logo {
         position: absolute;
         height: 8vw;
@@ -59,7 +68,7 @@ header {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
+    // puts navbar ontop of image
     .navbar-fixed {
         position: absolute;z-index:999999999;
     }

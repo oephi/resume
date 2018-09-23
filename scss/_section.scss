@@ -1,39 +1,46 @@
-section {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 1.5em;
+// section scss
 
+section {
+    // font-family: 'Share Tech Mono', monospace;
+    // font-family: 'Merriweather', sans-serif;
+        font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.3em;
+    padding: 1em;
+
+    // responsive design for the hobbies section
     .hobbies-list {
         list-style: none;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        // flex-wrap: wrap;
 
         @media only screen and (max-width: 800px){
             list-style: none;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            // flex-wrap: wrap;
         }
     }
-
+    // styling for the titles of each section
     div span.title {
-        font-family: 'PT Mono', monospace;
+        font-family: 'Palanquin', monospace;
+        // font-family: 'Do Hyeon', sans-serif;
         font-weight: bold;
         font-size: 1.4em;
         color: black;
     }
 
+    // styling for the facts
     #factDisplay {
-        color: darkslategrey;
+        color: purple;
     }
 
     h6.education-name {
         font-size: 1em;
         font-weight: bold;
     }
-    
+
+    // responsive design for the experience list
     ul.experience-list{
         display: flex;
         // flex-direction: column;
