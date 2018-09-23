@@ -44,7 +44,7 @@ I love simplicity, and so that is what I was going for with this website.  Somet
  - hexagons presenting my projects with a slide-up revealing mechanism
  
 #### Screenshots
-![alt text](assets/readme/Screenshot_Profile.png "Profile Screen Shot")
+![alt text](assets/readme/Screenshot_profile.png "Profile Screen Shot")
 
 #### Target Audience
 
